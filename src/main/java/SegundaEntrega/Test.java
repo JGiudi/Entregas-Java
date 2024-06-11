@@ -2,6 +2,7 @@ package SegundaEntrega;
 
 public class Test {
     public static void main(String[] args) {
+
         Lista lista = new Lista();
 
         lista.agregarPersona(new Persona("Fernando", "Alonso"));
@@ -11,15 +12,15 @@ public class Test {
         lista.agregarPersona(new Persona("Andres", "Iniesta"));
 
         lista.ordenarPorNombre();
-        System.out.println("Ordenado por nombre:");
+        System.out.println("Ordenado por nombre:\n");
         lista.imprimirLista();
 
         lista.ordenarPorApellido();
-        System.out.println("\nOrdenado por apellido:");
+        System.out.println("\nOrdenado por apellido:\n");
         lista.imprimirLista();
 
         lista.ordenarInversamentePorApellido();
-        System.out.println("\nOrdenado inversamente por apellido:");
+        System.out.println("\nOrdenado inversamente por apellido:\n");
         lista.imprimirLista();
     }
 }
